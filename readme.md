@@ -30,6 +30,11 @@
 | -   | directive.c                 | SET NUM OF THREADS USING DIRECTIVE CLAUSE                                       |
 | -   | function.c                  | SET THREADS USING FUNCTION                                                      |
 | -   | -                           | -                                                                               |
+| 7   | barrier.c                   | -                                                                               |
+| -   | no_wait.c                   | -                                                                               |
+| -   | loop.c                      | -                                                                               |
+| -   | loop2.c                     | -                                                                               |
+| -   | -                           | -                                                                               |
 | 8   | helloworld.c                | Sample Hello World                                                              |
 | -   | rank.c                      | Prink rank, world size and processor name                                       |
 | -   | master.c                    | Master prints "I am Master", Worker prints "I am worker"                        |
@@ -49,11 +54,6 @@
 | -   | -                           | -                                                                               |
 | -   | -                           | -                                                                               |
 | -   | -                           | -                                                                               |
-
-8
-Sample Hello World
-
-9
 
 Procedure for MPI
 mpicc hola.c -o hola
