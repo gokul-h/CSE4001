@@ -10,10 +10,11 @@ int main()
     for (int i = 0; i < 5; i++)
     {
         arr3[i] = arr1[i] + arr2[i];
-        sum = sum + arr3[i];
+        sum = arr3[i];
+        printf("Thread ID:-%d sum-%d \n",omp_get_thread_num(),sum);
     }
 
-    printf("The sum is \n");
+    printf("The sum is %d\n",sum);
     for (int i = 0; i < 5; i++)
     {
         printf("%d ", arr3[i]);

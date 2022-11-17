@@ -7,10 +7,12 @@ int main()
     {
         #pragma omp section
         {
-            printf("%d - %d = %d\n", a, b, a - b);
+            printf("Thread ID:-%d\n",omp_get_thread_num());
+            printf("%d - %d = %d\n\n", a, b, a - b);
         }
         #pragma omp section
         {
+            printf("Thread ID:-%d\n",omp_get_thread_num());
             printf("%d + %d = %d\n", a, b, a + b);
         }
     }
